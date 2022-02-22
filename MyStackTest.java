@@ -55,5 +55,20 @@ public class MyStackTest {
 		myStack.printStack();
 		Assert.assertEquals(myThirdNode, myNode);
 	}
+	
+	@Test
+	public void DequeueStack() {
+		MyStack myStack = new MyStack();
+		MyNode<Integer> myFirstNode = new MyNode<>(56);
+		MyNode<Integer> mySecondNode = new MyNode<>(30);
+		MyNode<Integer> myThirdNode = new MyNode<>(70);
+		
+		myStack.dequeue(myFirstNode);
+		myStack.dequeue(mySecondNode);
+		myStack.dequeue(myThirdNode);
+		INode dequeue = myStack.dequeue();
+		myStack.printStack();
+		Assert.assertEquals(myFirstNode, myNode);
+	}
 }
 	
