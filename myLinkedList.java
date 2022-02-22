@@ -28,24 +28,6 @@ public class myLinkedList<K> {
 			return tempNode;
 		}
 		
-		 public void enqueueElement(INode enque_node){
-		        INode tempNode;
-		        if (this.head == null){
-		            this.head = enque_node;
-		        }
-		        if (this.tail==null){
-		            this.tail = enque_node;
-		        }else {
-		            tempNode = this.tail;
-		            tempNode.setNext(enque_node);
-		            this.tail = enque_node;
-		        }
-		    }
-
-		public void printMyNode() {
-			System.out.println(head);
-		}
-
 		public INode enqueue(INode enque_node) {
 			 INode tempNode;
 		        if (this.head == null){
@@ -60,5 +42,9 @@ public class myLinkedList<K> {
 		        }
 			return null;
 		}
+
+		public void printMyNode() {
+			System.out.println(head);
+		}	
 }
 		
