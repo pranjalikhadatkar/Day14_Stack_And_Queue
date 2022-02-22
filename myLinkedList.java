@@ -21,6 +21,12 @@ public class myLinkedList<K> {
 				this.head.setNext(tempNode);
 			}
 		}
+		
+		public INode pop() {
+			INode tempNode = this.head;
+			this.head = head.getNext();
+			return tempNode;
+		}
 
 		public void printMyNode() {
 			System.out.println(head);
